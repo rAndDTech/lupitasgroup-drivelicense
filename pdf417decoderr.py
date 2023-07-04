@@ -26,6 +26,6 @@ class PDFDecoderLicense:
         else:
             return ""
 
-if __name__ == "__main__":
+#if __name__ == "__main__":
     
-    print(PDFDecoderLicense("org.jpeg").decode())
+#    print(PDFDecoderLicense("org.jpeg").decode())

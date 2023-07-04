@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from dictionario import AAMVA 
-#from pdf417decoderr import PDFDecoderLicense
+from pdf417decoderr import PDFDecoderLicense
 
 app = Flask(__name__)
 

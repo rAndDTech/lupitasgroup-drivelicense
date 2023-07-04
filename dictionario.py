@@ -144,5 +144,5 @@ ZCC
 ZCD""")
     print(aamva.parseDriverLicense())
 
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+#    main()
