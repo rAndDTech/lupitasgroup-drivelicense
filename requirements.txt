@@ -1,5 +1,5 @@
 Flask
 gunicorn
-PDF417Decoder
+pdf417decoder==1.0.8
 Pillow
 waitress
