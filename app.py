@@ -1,17 +1,21 @@
 from flask import Flask, request, jsonify
 from dictionario import AAMVA 
 from pdf417decoderr import PDFDecoderLicense
-
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route('/')
+@cross_origin()
 def index():
     # A welcome message to test our server
     return "<h1>Welcome to our apilupitas-drivelicese!</h1>"
 
 
 @app.route('/getmsg/', methods=['GET'])
+@cross_origin()
 def respond():
     aamva = AAMVA("""@
 ANSI 636014090002DL00410276ZC03170024DLDAQA7304733
@@ -64,6 +68,7 @@ ZCD""");
     return jsonify(response)
 
 @app.route('/post/', methods=['POST'])
+@cross_origin()
 def post_something():
     param = request.get_json()
     #request.form.get('name')
@@ -80,6 +85,7 @@ def post_something():
             "ERROR": "No name found. Please send a name."
         })
 @app.route("/lupitasgroup/v1/api/drivelicense/load", methods=['POST'])
+@cross_origin()
 def load_license():
     try:
         image=request.files['image']

@@ -8,6 +8,7 @@ click
 colorama
 decorator
 Flask
+Flask-Cors
 gitdb
 GitPython
 gunicorn
