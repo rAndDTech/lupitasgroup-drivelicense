@@ -2,6 +2,6 @@ Flask
 gunicorn
 numpy==1.25.0
 opencv-python==4.8.0.74
-pdf417decoder==1.0.8
+
 Pillow
 waitress

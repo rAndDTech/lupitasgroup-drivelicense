@@ -1,5 +1,5 @@
 from PIL import Image as PIL,ImageOps,ImageEnhance
-from pdf417decoder import PDF417Decoder
+from pdf417decoder.Decoder import PDF417Decoder
 
 class PDFDecoderLicense:
 
