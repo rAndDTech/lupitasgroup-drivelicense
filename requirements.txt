@@ -1,13 +1,5 @@
-blinker
-click
-colorama
 Flask
 gunicorn
-itsdangerous
-Jinja2
-MarkupSafe
-numpy
-opencv-python
 pdf417decoder
 Pillow
-Werkzeug
+waitress
